@@ -1,3 +1,9 @@
+# /// script
+# requires-python = ">=3.14"
+# dependencies = [
+#     "rich",
+# ]
+# ///
 from rich.console import Console
 from rich.tree import Tree
 
@@ -6,35 +12,35 @@ console = Console(record=True, width=100)
 tree = Tree("🙂 [link=https://koaning.io]Vincent D. Warmerdam", guide_style="bold bright_black")
 
 python_tree = tree.add("📦 Open Source Packages", guide_style="bright_black")
-python_tree.add("[bold link=https://github.com/koaning/embetter]embetter[/]          - [bright_black]embeddings ready for sklearn")
+python_tree.add("[bold link=https://github.com/koaning/scikit-lego]scikit-lego[/]       - [bright_black]lego bricks for sklearn")
 python_tree.add("[bold link=https://github.com/koaning/drawdata]drawdata[/]          - [bright_black]draw datasets in jupyter")
+python_tree.add("[bold link=https://github.com/koaning/embetter]embetter[/]          - [bright_black]embeddings ready for sklearn")
 python_tree.add("[bold link=https://github.com/koaning/uvtrick]uvtrick[/]           - [bright_black]run functions in external venvs via uv")
+python_tree.add("[bold link=https://github.com/koaning/mktestdocs]mktestdocs[/]        - [bright_black]turn markdown files into pytest tests")
 python_tree.add("[bold link=https://github.com/koaning/wigglystuff]wigglystuff[/]       - [bright_black]extra notebook widgets")
 python_tree.add("[bold link=https://github.com/koaning/mohtml]mohtml[/]            - [bright_black]Pythonic HTML (for Marimo)")
 python_tree.add("[bold link=https://github.com/koaning/smartfunc]smartfunc[/]         - [bright_black]turns docstrings into LLM-functions")
-python_tree.add("[bold link=https://github.com/koaning/scikit-lego]scikit-lego[/]       - [bright_black]lego bricks for sklearn")
-python_tree.add("[bold link=https://github.com/koaning/scikit-partial]scikit-partial[/]    - [bright_black]partial_fit() pipelines for sklearn")
-python_tree.add("[bold link=https://github.com/koaning/scikit-bloom/]scikit-bloom[/]      - [bright_black]bloom transformers for sklearn")
-python_tree.add("[bold link=https://github.com/koaning/bulk]bulk[/]              - [bright_black]simple bulk labelling interface")
-python_tree.add("[bold link=https://github.com/koaning/fh-matplotlib/]fh-matplotlib[/]     - [bright_black]matplotlib for FastHTML")
-python_tree.add("[bold link=https://github.com/koaning/fh-altair/]fh-altair[/]         - [bright_black]altair for FastHTML")
-python_tree.add("[bold link=https://github.com/koaning/simsity/]simsity[/]           - [bright_black]dead simple vector 'database'")
 python_tree.add("[bold link=https://github.com/koaning/dicekit/]dicekit[/]           - [bright_black]domain specific interface for dice")
-python_tree.add("[bold link=https://github.com/koaning/flowshow/]flowshow[/]          - [bright_black]over the top logging decorator")
+
+python_tree.add("[bold link=https://github.com/koaning/taskhut/]taskhut[/]           - [bright_black]basic task routing for annotation")
+python_tree.add("[bold link=https://github.com/koaning/diskdantic/]diskdantic[/]        - [bright_black]a mini ORM for files on disk")
+python_tree.add("[bold link=https://github.com/koaning/pbt/]pbt[/]               - [bright_black]domain specific interface for dice")
+
 python_tree.add("[bold link=https://github.com/koaning/human-learn]human-learn[/]       - [bright_black]rule-based components for sklearn")
 python_tree.add("[bold link=https://github.com/koaning/doubtlab]doubtlab[/]          - [bright_black]suite of tools to help find bad labels")
-python_tree.add("[bold link=https://github.com/koaning/sentence-models]sentence-models[/]   - [bright_black]a different take on textcat")
-python_tree.add("[bold link=https://github.com/koaning/mktestdocs]mktestdocs[/]        - [bright_black]turn markdown files into pytest tests")
+python_tree.add("[bold link=https://github.com/koaning/simsity/]simsity[/]           - [bright_black]dead simple vector 'database'")
 python_tree.add("[bold link=https://github.com/koaning/lazylines]lazylines[/]         - [bright_black]lightweight utils for .jsonl wrangling")
+python_tree.add("[bold link=https://github.com/koaning/fh-matplotlib/]fh-matplotlib[/]     - [bright_black]matplotlib for FastHTML")
+python_tree.add("[bold link=https://github.com/koaning/fh-altair/]fh-altair[/]         - [bright_black]altair for FastHTML")
 python_tree.add("[bold link=https://github.com/koaning/pytest-duration-insights]durations[/]         - [bright_black]pytest duration insights")
 python_tree.add("[bold link=https://github.com/koaning/tuilwindcss]tuilwindcss[/]       - [bright_black]tailwindcss for textual tui apps")
+python_tree.add("[bold link=https://github.com/koaning/sentence-models]sentence-models[/]   - [bright_black]a different take on textscat")
 python_tree.add("[bold link=https://github.com/koaning/memo]memo[/]              - [bright_black]saves a whole log of time")
-python_tree.add("[bold link=https://github.com/koaning/skedulord]skedulord[/]         - [bright_black]makes cron a bit more fun")
-python_tree.add("[bold link=https://github.com/koaning/icepickle]icepickle[/]         - [bright_black]cool and safe storage for linear models")
-python_tree.add("[bold link=https://github.com/godatadriven/evol]evol[/]              - [bright_black]grammar for genetic heuristics")
+python_tree.add("[bold link=https://github.com/koaning/scikit-partial]scikit-partial[/]    - [bright_black]partial_fit() pipelines for sklearn")
+python_tree.add("[bold link=https://github.com/koaning/scikit-bloom/]scikit-bloom[/]      - [bright_black]bloom transformers for sklearn")
 
 
-contrib_tree = tree.add("👍 Project Contributions", guide_style="bright_black")
+contrib_tree = tree.add("👍 Larger Project Contributions", guide_style="bright_black")
 contrib_tree.add("[bold link=https://fairlearn.org/v0.7.0/api_reference/fairlearn.preprocessing.html#fairlearn.preprocessing.CorrelationRemover]fairlearn[/]         - [bright_black]contributed the CorrelationFilter")
 contrib_tree.add("[bold link=https://github.com/pola-rs/polars/pull/82]polars[/]            - [bright_black]contributed the .pipe() method")
 contrib_tree.add("[bold link=https://github.com/MaartenGr/BERTopic/issues/768]BERTopic[/]          - [bright_black]added lightweight sklearn pipeline support")
@@ -42,7 +48,6 @@ contrib_tree.add("[bold link=https://github.com/MaartenGr/BERTopic/issues/768]BE
 online_tree = tree.add("⭐ Online Projects", guide_style="bright_black")
 online_tree.add("[bold link=https://calmcode.io]calmcode.io[/]       - [bright_black]intermediate developer education")
 online_tree.add("[bold link=https://koaning.io]koaning.io[/]        - [bright_black]personal blog")
-online_tree.add("[bold link=https://dearme.email]dearme.email[/]      - [bright_black]reflection via a 30 day delay")
 
 talk_tree = tree.add("🎙️ Popular Talks", guide_style="bright_black")
 talk_tree.add("[bold link=https://www.youtube.com/watch?v=C9p7suS-NGk]Natural Intelligence is All You Need[tm][/]")
@@ -63,10 +68,20 @@ experiments_tree.add("[bold link=https://github.com/koaning/sentimany]sentimany[
 experiments_tree.add("[bold link=https://github.com/koaning/tokenwiser]tokenwiser[/]     - [bright_black]sklearn token tricks")
 experiments_tree.add("[bold link=https://github.com/koaning/clumper]clumper[/]        - [bright_black]functional API for lists of dicts")
 experiments_tree.add("[bold link=https://github.com/koaning/whatlies]whatlies[/]       - [bright_black]exploration tools for word embeddings")
+experiments_tree.add("[bold link=https://github.com/koaning/skedulord]skedulord[/]      - [bright_black]makes cron a bit more fun")
+experiments_tree.add("[bold link=https://github.com/koaning/icepickle]icepickle[/]      - [bright_black]cool and safe storage for linear models")
+experiments_tree.add("[bold link=https://github.com/koaning/bulk]bulk[/]           - [bright_black]simple bulk labelling interface")
+experiments_tree.add("[bold link=https://github.com/godatadriven/evol]evol[/]           - [bright_black]grammar for genetic heuristics")
+experiments_tree.add("[bold link=https://github.com/koaning/flowshow/]flowshow[/]          - [bright_black]over the top logging decorator")
 
 employer_tree = tree.add("👨‍💻 Employer", guide_style="bright_black")
 marimo_tree = employer_tree.add("[bold link=https://marimo.io/]🍀 marimo[/]      - [bright_black]better Python notebooks")
-marimo_tree.add("[bold link=https://github.com/koaning/mosync]mosync[/]            - [bright_black]async tools for microbatching in marimo")
+marimo_tree.add("[bold link=https://github.com/koaning/mofresh]mofresh[/]           - [bright_black]Refresh marimo cells remotely")
+marimo_tree.add("[bold link=https://github.com/koaning/mopaint]mopaint[/]           - [bright_black]MS paint notebook widget")
+marimo_tree.add("[bold link=https://github.com/koaning/moterm]moterm[/]            - [bright_black]Chainable terminal notebook widget")
+marimo_tree.add("[bold link=https://github.com/koaning/mobuild]mobuild[/]           - [bright_black]Build Python pkgs from marimo notebook")
+marimo_tree.add("[bold link=https://github.com/koaning/mopad]mopad[/]             - [bright_black]Gamepad support for Python notebooks")
+marimo_tree.add("[bold link=https://github.com/koaning/motalk]motalk[/]            - [bright_black]Webspeechkit for Python notebooks")
 marimo_tree.add("[bold link=https://github.com/koaning/datasette-marimo]datasette-marimo[/]  - [bright_black]datasette plugin for marimo")
 
 probabl_tree = employer_tree.add("[bold link=https://probabl.ai/]🎲 :probabl.[/]   - [bright_black]scikit-learn and friends")
